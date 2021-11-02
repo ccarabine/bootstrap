@@ -4,7 +4,22 @@ body {
 
 /* Containers */
 
-.alert-container {}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    color: #544600;
+    background-color: #eec802; /* have a look at the color picker from google dev tools*/
+    border-color: #eec802;
+    padding: 5px 15px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    border-radius: 0; /*remove rounded corners*/
+}
+
 
 .callout-container {
     height: 100vh; /* call out section to be 100% browswer window*/
@@ -51,6 +66,36 @@ body {
 
 .block-divider--short {
     width: 35px;
+}
+
+/* Navbar */
+
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* for 3d space default is 0, 1 brings it forward*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar {
+    margin-bottom: 0; /* turn off bootstrap margin and border*/
+    width: 100%;
+    background-color: rgba(0, 0, 0, .25);
+    border: 0;
+}
+
+.navbar .navbar-toggler {
+    border: 0; /*remove border around navbar*/
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
 }
 
 /* Jumbotron */
